@@ -1,0 +1,30 @@
+@shadowButton: 0 0 0.2rem 0.3rem rgb(48, 48, 48);
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  font-family: "Consolas", "微软雅黑";
+  user-select: none;
+  max-width: 450px;
+  .container {
+    max-width: 450px;
+  }
+}
+.title {
+  padding: 1rem 5%;
+  background: steelblue;
+  color: #fff;
+  margin: 2em;
+  box-shadow: @shadowButton;
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+}
+.hidden {
+  display: none;
+}

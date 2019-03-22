@@ -5,7 +5,7 @@ class MatrixToolkit {
   }
 
   createRow(v = 0) {
-    return Array.from({ length: 9 }, () => createCol(v));
+    return Array.from({ length: 9 }, () => this.createCol(v));
   }
 /**
  * fisher-yates洗牌算法

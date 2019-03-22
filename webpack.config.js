@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-
+const webpack = require('webpack');
 module.exports = {
   mode: "development",
   entry: {
@@ -48,5 +48,6 @@ module.exports = {
   plugins: [new HtmlWebpackPlugin({
     template: './index.html'
   }),
-  new ExtractTextPlugin('style.css')]
+  new ExtractTextPlugin('style.css'),
+  new webpack.HotModuleReplacementPlugin()],
 }
